@@ -21,7 +21,7 @@ app.use("/msg", msgRouter)
 
 const start = async () => {
     try {
-        await mongoose.connect('mongodb+srv://starttobacco:B5cSRlXcGXZjj3on@ru-starttobacco.vvdabvs.mongodb.net/');
+        await mongoose.connect('');
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });    } catch (e) {
