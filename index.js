@@ -23,7 +23,7 @@ app.use("/blog", blogRouter)
 
 const start = async () => {
     try {
-        await mongoose.connect('');
+        await mongoose.connect('mongodb+srv://starttobacco:mw03p7jkvcnNLbeO@ru-starttobacco.vvdabvs.mongodb.net/');
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });    } catch (e) {
