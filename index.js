@@ -9,6 +9,7 @@ const productRouter = require('./Products/Router/Router')
 const orderRouter = require('./Orders/router/router')
 const reviewRouter = require('./Reviews/router/router')
 const msgRouter = require('./Messages/router/router')
+const blogRouter = require('./blog/router/router')
 
 app.use(cors())
 app.use(express.json())
@@ -18,6 +19,7 @@ app.use("/items", productRouter)
 app.use("/order", orderRouter)
 app.use("/review", reviewRouter)
 app.use("/msg", msgRouter)
+app.use("/blog", blogRouter)
 
 const start = async () => {
     try {

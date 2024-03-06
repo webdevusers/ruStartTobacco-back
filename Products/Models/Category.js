@@ -4,6 +4,7 @@ const Category = new Schema({
     title: {unique: true, required: true, type: String},
     image: {type: String, required: true},
     sections: [{type: Schema.Types.ObjectId, ref: 'Section'}],
+    description: {type: String},
     urlLink: String
 })
 module.exports = model('Category', Category)
