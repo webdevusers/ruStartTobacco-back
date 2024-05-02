@@ -42,5 +42,16 @@ router.get("/get", async (req, res) => {
     res.json(e);
   }
 });
+router.get("/one/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const blog1 = await blog.findOne({ urlLink: id });
+
+    res.status(200).json(blog1)
+  } catch(e) {
+    res.status(500).json({e})
+  }
+})
 
 module.exports = router;
